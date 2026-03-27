@@ -1,1 +1,85 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 3 — Walk-Forward Validation</title>
+</head>
+
+<body>
+
+<h1>Step 3 — Member Walk-Forward Validation</h1>
+
+<p>
+This step performs true historical walk-forward testing of the member engine.
+It is the only step that determines whether the system actually works.
+</p>
+
+<hr>
+
+<h2>Purpose</h2>
+<ul>
+  <li>Test predictions using only prior data (no lookahead)</li>
+  <li>Measure Top1, Top2, and play-rule capture</li>
+  <li>Validate whether the system meets the 75% target</li>
+</ul>
+
+<hr>
+
+<h2>Available Engine</h2>
+
+<ul>
+  <li>
+    <strong>Walk-Forward Validator</strong><br>
+    Chunked + cached validator for full historical testing<br>
+    <a href="../apps/step3-walkforward/core025_member_engine_walkforward_chunked_cached_v1__2026-03-26.py">
+      View Python file
+    </a>
+  </li>
+</ul>
+
+<hr>
+
+<h2>Current Results</h2>
+
+<ul>
+  <li>Top1 capture ~37.5%</li>
+  <li>Top2 capture ~64.4%</li>
+  <li>Play-rule capture ~33–34%</li>
+</ul>
+
+<p>
+❌ Target not met (75% required)
+</p>
+
+<hr>
+
+<h2>Interpretation</h2>
+
+<ul>
+  <li>Baseline scoring is insufficient</li>
+  <li>Trait integration is required</li>
+  <li>Current system lacks strong separation logic</li>
+</ul>
+
+<hr>
+
+<h2>Next Step</h2>
+
+<p>
+Proceed to Step 4 — Trait Miner to discover patterns that improve member selection.
+</p>
+
+<p>
+<a href="step4-trait-miner.html">Go to Step 4 →</a>
+</p>
+
+<hr>
+
+<p>
+<a href="index.html">← Back to Home</a>
+</p>
+
+</body>
+</html>
