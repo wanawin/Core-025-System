@@ -1,1 +1,105 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 5 — Trait-Integrated Member Engine</title>
+</head>
+
+<body>
+
+<h1>Step 5 — Trait-Integrated Member Engine</h1>
+
+<p>
+This step applies mined traits before weighted scoring. It is the first attempt to use
+hard trait overrides to improve member selection for Core 025.
+</p>
+
+<hr>
+
+<h2>Purpose</h2>
+<ul>
+  <li>Use separation traits to force a member when evidence is strong</li>
+  <li>Use Top2-needed traits to force Top1+Top2 when required</li>
+  <li>Use skip-danger traits to block bad skips</li>
+  <li>Fallback to weighted scoring when no strong trait override applies</li>
+</ul>
+
+<hr>
+
+<h2>Available Engine</h2>
+
+<ul>
+  <li>
+    <strong>v3.5 (Trait-Integrated)</strong><br>
+    Uses mined traits as hard overrides before weighted member scoring<br>
+    <a href="../apps/step5-trait-integrated/core025_member_engine_v3_5__2026-03-26.py">
+      View Python file
+    </a>
+  </li>
+</ul>
+
+<hr>
+
+<h2>Required Inputs</h2>
+
+<ul>
+  <li>Full history file</li>
+  <li>PLAY survivors file</li>
+  <li>Separation traits CSV</li>
+  <li>Top2-needed traits CSV</li>
+  <li>Skip-danger traits CSV</li>
+</ul>
+
+<p>
+Optional inputs:
+</p>
+
+<ul>
+  <li>0025 traits CSV</li>
+  <li>0225 traits CSV</li>
+  <li>0255 traits CSV</li>
+</ul>
+
+<hr>
+
+<h2>Current Status</h2>
+
+<ul>
+  <li>This is the current trait-integrated member engine</li>
+  <li>It is designed to improve on the baseline member engine</li>
+  <li>It still requires full historical walk-forward validation</li>
+</ul>
+
+<p>
+⚠️ This step is experimental and should not be considered validated until it proves
+materially better historical capture in walk-forward testing.
+</p>
+
+<hr>
+
+<h2>Previous Step</h2>
+
+<p>
+This step depends on trait discovery from Step 4.
+</p>
+
+<p>
+<a href="step4-trait-miner.html">← Back to Step 4</a>
+</p>
+
+<hr>
+
+<h2>Next Step</h2>
+
+<p>
+After this engine is tested, the next move is a matching walk-forward validator for the trait-integrated logic.
+</p>
+
+<p>
+<a href="index.html">Back to Home</a>
+</p>
+
+</body>
+</html>
