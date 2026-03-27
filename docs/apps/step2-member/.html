@@ -1,17 +1,74 @@
-<h2>Available Member Engines</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 2 — Member Ranking</title>
+</head>
+
+<body>
+
+<h1>Step 2 — Member Ranking Engine</h1>
+
+<p>
+This step ranks Core 025 members (0025, 0225, 0255) using the baseline scoring model.
+It determines which member looks strongest after the skip stage.
+</p>
+
+<hr>
+
+<h2>Purpose</h2>
+<ul>
+  <li>Score each Core 025 member using historical behavior</li>
+  <li>Recommend the strongest member candidates</li>
+  <li>Feed results into walk-forward validation</li>
+</ul>
+
+<hr>
+
+<h2>Available Engine</h2>
 
 <ul>
   <li>
     <strong>v3 (Baseline)</strong><br>
+    Pure weighted scoring model without trait overrides<br>
     <a href="../apps/step2-member/core025_member_engine_v3__2026-03-26.py">
-      View code
-    </a>
-  </li>
-
-  <li>
-    <strong>v3.5 (Trait Integrated)</strong><br>
-    <a href="../apps/step2-member/core025_member_engine_v3_5__2026-03-26.py">
-      View code
+      View Python file
     </a>
   </li>
 </ul>
+
+<hr>
+
+<h2>Current Status</h2>
+
+<ul>
+  <li>This is the baseline member-ranking engine</li>
+  <li>Used as the control version for later comparisons</li>
+  <li>Trait-integrated logic has been moved to Step 5</li>
+</ul>
+
+<p>
+This step is the baseline reference point. Any future member engine must be measured against it.
+</p>
+
+<hr>
+
+<h2>Next Step</h2>
+
+<p>
+Proceed to Step 3 — Walk-Forward Validation to test historical performance.
+</p>
+
+<p>
+<a href="step3-walkforward.html">Go to Step 3 →</a>
+</p>
+
+<hr>
+
+<p>
+<a href="index.html">← Back to Home</a>
+</p>
+
+</body>
+</html>
