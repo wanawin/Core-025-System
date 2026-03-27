@@ -1,1 +1,92 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 4 — Trait Miner</title>
+</head>
+
+<body>
+
+<h1>Step 4 — Member Trait Miner</h1>
+
+<p>
+This step mines historical seed-to-member transitions to find traits that may improve
+member selection for Core 025.
+</p>
+
+<hr>
+
+<h2>Purpose</h2>
+<ul>
+  <li>Find separation traits where one member clearly beats the other two</li>
+  <li>Find member-specific traits for 0025, 0225, and 0255</li>
+  <li>Find Top2-needed pockets where Top1 often fails but Top2 succeeds</li>
+  <li>Find skip-danger pockets where skipping would throw away winners</li>
+</ul>
+
+<hr>
+
+<h2>Available Engine</h2>
+
+<ul>
+  <li>
+    <strong>Trait Miner v1</strong><br>
+    Mines member-dominance, Top2-needed, and skip-danger traits<br>
+    <a href="../apps/step4-trait-miner/core025_member_trait_miner_v1__2026-03-26.py">
+      View Python file
+    </a>
+  </li>
+</ul>
+
+<hr>
+
+<h2>Expected Outputs</h2>
+
+<ul>
+  <li>Separation traits CSV</li>
+  <li>0025 traits CSV</li>
+  <li>0225 traits CSV</li>
+  <li>0255 traits CSV</li>
+  <li>Top2-needed traits CSV</li>
+  <li>Skip-danger traits CSV</li>
+  <li>Historical hit-event prediction table CSV</li>
+</ul>
+
+<hr>
+
+<h2>Current Status</h2>
+
+<ul>
+  <li>The miner is functioning</li>
+  <li>Top2-needed and skip-danger outputs are especially important</li>
+  <li>At least one separation-traits run produced an effectively empty file</li>
+</ul>
+
+<p>
+⚠️ An empty separation file is not just a file problem. It may mean the current settings are too strict
+or that strong single-trait member separation is limited.
+</p>
+
+<hr>
+
+<h2>How This Step Is Used</h2>
+
+<p>
+The outputs from this miner feed Step 5, where mined traits are applied as hard overrides
+before weighted member scoring.
+</p>
+
+<p>
+<a href="step5-trait-integrated-member.html">Go to Step 5 →</a>
+</p>
+
+<hr>
+
+<p>
+<a href="index.html">← Back to Home</a>
+</p>
+
+</body>
+</html>
